@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    --color-primary: #f56b00;
+    --color-primary-hover: #ce6301;
+    --color-secondary: #f56b00;
+    --color-secondary-hover: #ce6301;
+}
+.card{
+    border: solid 1px lightgray;
+    max-width: 360px;
+    padding: 32px 24px 24px 24px;
+}
+.card:hover{
+    background-color: whitesmoke;
+}
+
+.galery-card{
+display: flex;
+flex-wrap: wrap;
+align-items: stretch;
+}
+
+img{
+    width: 100%;
+    cursor: pointer;
+    
+}
+button{
+    font-weight: bold;
+    font-size: 14px;
+    background-color: var(--color-secondary);
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    border-color: var(--color-secondary);
+
+}
+
+button:hover{
+    background-color: var(--color-secondary-hover);
+    border-color: var(--color-secondary-hover);
+}
+
+.card-info{
+    position: relative;
+}
+
+.image-space{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.widget{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -70px;
+    list-style: none;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+h2{
+    margin-bottom: 36px;
+    font-size: 18px;
+}
+
+.nabidka{
+    display: flex;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+}
+.cena{
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    background-color: #E31E53;
+    position: absolute;
+    top: -380px;
+    right: -8px;
+    display: flex;
+}
+
+.horni-stitek{
+    position: absolute;
+    top: -380px;
+    right: 210px;
+    display: flex;
+    background-color: #32cb00;
+    color: #fff;
+    float: left;
+    clear: left;
+    width: auto;
+    margin-bottom: 4px;
+    padding: 9.5px 12px;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+.skladem{
+    font-weight: bold;
+    font-family: ikony;
+    color: green;
+}
+.material-icons{
+    font-size: 12px;
+}
+.preskrtnuti{
+    text-decoration: line-through;
+}
+
+.zvetseni{
+    font-size: 17px;
+}
+
+.procenta{
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+li{
+    margin-right: 2px;
+    line-height: 24px;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    color: gray;
+    padding: 2px;
+}
+li:hover{
+    background-color: var(--color-primary);
+    border:var(--color-primary);
+    color: white;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 500px){
+    .card {
+        width: 50%;
+    }
+    .nabidka{
+        flex-direction: column;
+    }
+    button{
+        margin-top: 20px;
+    }
+    .horni-stitek{
+        top: -230px;
+        right: 80px;
+    }
+    .cena{
+        top: -100px;
+        right: -20px; 
+    }
+    .widget{
+        font-size: 0px;
+    }
+    li{
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+    }
+}
